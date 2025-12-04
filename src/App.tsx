@@ -11,7 +11,7 @@ import CaseStudy from './pages/CaseStudy';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/jahangiruiux">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
