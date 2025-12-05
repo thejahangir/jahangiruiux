@@ -52,12 +52,12 @@ import genesisThree from '../assets/projects/genesis/genesis3.png';
 export const caseStudies = [
     {
     id: "prometric",
-    title: "Prometric Exam Creation",
-    client: "Prometric",
+    title: "Prometric Test Creation",
+    client: "Prometric Inc",
     showComparison: true,
-    overview: "Migration of legacy Flex modules into a fully modernized React-based application.",
+    overview: "The existing Flex-based modules relied on deprecated technologies and lacked long-term maintainability. As technical debt accumulated, enhancements became costly and inefficient. To ensure scalability, improve performance, and align with modern development standards, a complete migration to React was required.",
     role: "Lead UX Designer",
-    tech: ["Figma", "HTML", "SCSS", "KendoReact"],
+    tech: ["Figma", "HTML", "SCSS", "KendoReact", "WCAG 2.1"],
 
     beforeImage: prBefore,
     afterImage: prAfter,
@@ -68,8 +68,8 @@ export const caseStudies = [
       "Improved interaction flows to ensure smoother user navigation.",
       "Enhanced accessibility and performed WCAG 2.1 AA compliance checks."
     ],
-    challenge: "Legacy Flex modules were outdated and difficult to maintain, requiring a complete modernization to React.",
-    outcomes: "Successfully migrated to a modern React application with improved accessibility and user experience.",
+    challenge: "The legacy Flex modules were relying on obsolete technology and posed significant maintenance challenges. To improve performance, maintainability, and future scalability, we undertook a complete modernization initiative, transitioning the entire system to React.",
+    outcomes: "The migration to a modern React application was completed successfully, introducing a more accessible, responsive, and intuitive interface. This overhaul not only improved usability but also enabled faster iteration, better performance, and long-term maintainability.",
     color: "from-blue-600 to-cyan-500"
   },
   {
@@ -77,8 +77,8 @@ export const caseStudies = [
     title: "GPS Navigation",
     client: "DCLI",
     showComparison: true,
-    overview: "Web UI Development and Mobile App Development.",
-    role: "Lead UX Designer",
+    overview: "An overview of GPS navigation solutions, with responsibilities spanning Web UI development as well as mobile application development to deliver a seamless cross-platform experience.",
+    role: "UX Architect",
     tech: ["Figma", "ChatGPT"],
     beforeImage: gpsBefore,
     afterImage: gpsAfter,
@@ -88,8 +88,8 @@ export const caseStudies = [
       "Created Design System",
       "Mentored UI Team"
     ],
-    challenge: "Creating a unified navigation experience across web and mobile platforms.",
-    outcomes: "Established a robust design system and delivered high-fidelity prototypes.",
+    challenge: "A key challenge involved establishing a unified navigation framework that delivered a consistent, intuitive experience across web and mobile applications, despite differences in screen sizes, interaction models, and user expectations.",
+    outcomes: "Developed a scalable design system and delivered high-fidelity prototypes, enabling cohesive user experiences, faster implementation, and improved cross-team collaboration.",
     color: "from-emerald-500 to-teal-500"
   },
   {
@@ -97,7 +97,7 @@ export const caseStudies = [
     title: "IAmInterviewed",
     client: "Antern Technology",
     showComparison: true,
-    overview: "UI Modernization and Mobile App Development.",
+    overview: "An end-to-end initiative involving UI modernization and mobile app development to enhance usability, improve performance, and deliver a seamless cross-platform experience.",
     role: "Lead UX Designer",
     tech: ["Figma", "HTML", "SCSS", "React"],
     beforeImage: iaiBefore,
@@ -109,8 +109,8 @@ export const caseStudies = [
       "UX Research and Heuristic Evaluation",
       "Improved interaction flows to ensure smoother user navigation."
     ],
-    challenge: "Modernizing the UI and developing a mobile app experience.",
-    outcomes: "Delivered a modern UI and improved user navigation flows.",
+    challenge: "A key challenge involved overhauling the outdated UI and creating a well-integrated mobile app experience that aligns with modern usability standards and user expectations.",
+    outcomes: "Achieved a fully modernized UI and redesigned navigation flows, resulting in improved usability, clearer task paths, and a more seamless overall user experience.",
     color: "from-purple-600 to-indigo-600"
   },
   {
@@ -118,9 +118,9 @@ export const caseStudies = [
     title: "Off Duty Management",
     client: "OfficerTRACK",
     showComparison: true,
-    overview: "UI redesign and development for a law enforcement activity tracking system.",
+    overview: "A complete UI redesign and front-end development initiative for a law enforcement activity tracking system, complemented by a thorough accessibility review to ensure compliance and inclusive user experiences.",
     role: "Product Designer",
-    tech: ["Figma", "HTML", "CSS", "jQuery"],
+    tech: ["Figma", "HTML", "CSS", "jQuery", "WCAG 2.1"],
     beforeImage: otBefore,
     afterImage: otAfter,
     images: [otOne, otTwo, otThree],
@@ -129,8 +129,8 @@ export const caseStudies = [
       "Conducted accessibility evaluation based on WCAG 2.1 AA.",
       "Improved user flow consistency across modules."
     ],
-    challenge: "The existing system needed a clarity and operational efficiency overhaul.",
-    outcomes: "Delivered a more consistent and accessible user interface.",
+    challenge: "The legacy system lacked clarity in its interface and suffered from inefficient workflows, creating the need for a comprehensive redesign to improve usability and operational effectiveness.",
+    outcomes: "Achieved a cohesive and accessibility-enhanced user interface, resulting in improved user confidence, clearer workflows, and a more inclusive experience.",
     color: "from-slate-700 to-slate-900"
   },
   {
@@ -138,9 +138,9 @@ export const caseStudies = [
     title: "Riverbed Support",
     client: "Riverbed",
     showComparison: true,
-    overview: "Enhancements and maintenance of Riverbed’s global support portal.",
+    overview: "Oversaw major enhancements and sustained maintenance efforts for Riverbed’s corporate website and global support portal, ensuring improved performance, usability, and reliability across platforms.",
     role: "UX/UI Designer",
-    tech: ["Adobe XD", "Figma", "AEM"],
+    tech: ["Adobe XD", "Figma", "HTML", "CSS", "JavaScript", "AEM"],
     beforeImage: riverbedBefore,
     afterImage: riverbedAfter,
     images: [riverbedOne, riverbedTwo, riverbedThree, riverbedFour, riverbedFive],
@@ -149,8 +149,8 @@ export const caseStudies = [
       "Integrated front-end features with AEM and managed publish workflows.",
       "Supported backend teams in UI-related implementation and coordinated with onsite team."
     ],
-    challenge: "Maintaining and enhancing a global support portal with complex integrations.",
-    outcomes: "Streamlined UI enhancements and improved collaboration with backend teams.",
+    challenge: "A key challenge was to continuously maintain and enhance Riverbed’s corporate site and global support portal, ensuring seamless functionality amid numerous complex third-party and backend integrations.",
+    outcomes: "Achieved more efficient UI enhancement processes and significantly improved collaboration with backend teams, resulting in faster delivery, reduced friction, and more cohesive product improvements.",
     color: "from-orange-500 to-red-500"
   },
   {
@@ -158,8 +158,8 @@ export const caseStudies = [
     title: "Sabre Inc.",
     client: "Sabre",
     showComparison: false,
-    overview: "UI enhancement and accessibility improvements for Sabre client website.",
-    role: "UI Designer",
+    overview: "Led UI enhancement initiatives and implemented accessibility improvements for the Sabre client website, ensuring a more user-friendly, compliant, and inclusive digital experience.",
+    role: "Accesibility Analyst",
     tech: ["Figma", "WCAG 2.0"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
     responsibilities: [
@@ -167,8 +167,8 @@ export const caseStudies = [
       "Enhanced interface structure for improved usability.",
       "Ensured consistent styling and interaction across pages."
     ],
-    challenge: "Ensuring the client website met strict WCAG 2.0 AA accessibility standards.",
-    outcomes: "Improved usability and accessibility compliance.",
+    challenge: "A key challenge involved bringing the client website into full alignment with WCAG 2.0 AA accessibility requirements, ensuring inclusivity for users with diverse abilities while maintaining design and functional integrity.",
+    outcomes: "Delivered significant improvements in overall usability and successfully elevated the website to meet WCAG accessibility compliance, resulting in a more inclusive and user-friendly experience.",
     color: "from-red-600 to-pink-600"
   },
   {
@@ -176,7 +176,7 @@ export const caseStudies = [
     title: "My Hyundai",
     client: "Hyundai America",
     showComparison: false,
-    overview: "Hyundai Owner Profile interface used by Hyundai vehicle customers.",
+    overview: "A customer-facing interface that allows Hyundai vehicle owners to access and manage their Hyundai Owner Profile, including personal details, vehicle information, and connected services.",
     role: "Senior UI/UX Designer",
     tech: ["Figma", "HTML", "CSS", "jQuery", "AEM"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -185,8 +185,8 @@ export const caseStudies = [
       "Developed responsive front-end screens for AEM integration.",
       "Ensured consistent UI patterns across user dashboard features."
     ],
-    challenge: "Creating a seamless dashboard experience for vehicle owners.",
-    outcomes: "Delivered a responsive and user-friendly owner profile interface.",
+    challenge: "A key challenge involved designing a unified, intuitive dashboard experience that enables Hyundai vehicle owners to easily access and manage their profile, vehicle data, and related services.",
+    outcomes: "Achieved a fully responsive and user-centric owner profile interface, enhancing usability, improving navigation, and providing a smoother experience for Hyundai vehicle owners across devices.",
     color: "from-indigo-600 to-blue-600"
   },
   {
@@ -194,7 +194,7 @@ export const caseStudies = [
     title: "CPO Hyundai",
     client: "Hyundai America",
     showComparison: false,
-    overview: "Portal showcasing Hyundai Certified Pre-Owned vehicles.",
+    overview: "A customer-facing portal that highlights Hyundai’s Certified Pre-Owned vehicle lineup, providing detailed listings, vehicle insights, and a streamlined browsing experience for prospective buyers.",
     role: "Senior UI/UX Designer",
     tech: ["Figma", "HTML", "CSS", "jQuery", "AEM"],
     images: [hyundaiOne, hyundaiTwo, hyundaiThree, hyundaiFour],
@@ -203,8 +203,8 @@ export const caseStudies = [
       "Developed responsive front-end templates for AEM components.",
       "Improved UX across listing and detail pages."
     ],
-    challenge: "Optimizing the vehicle search and filtering experience for pre-owned cars.",
-    outcomes: "Enhanced the user experience for browsing and filtering vehicles.",
+    challenge: "A key challenge involved enhancing the search and filtering experience to ensure users could efficiently discover Hyundai Certified Pre-Owned vehicles based on their preferences, budget, and feature requirements.",
+    outcomes: "Delivered a significantly improved browsing and filtering experience, allowing prospective buyers to seamlessly explore Hyundai Certified Pre-Owned vehicles and make more informed decisions.",
     color: "from-blue-800 to-indigo-900"
   },
   {
@@ -212,7 +212,7 @@ export const caseStudies = [
     title: "NCR.com",
     client: "NCR",
     showComparison: false,
-    overview: "NCR’s official corporate website.",
+    overview: "The official corporate website for NCR, serving as the primary digital touchpoint for showcasing the company’s solutions, services, and brand presence.",
     role: "UI Designer & Front-End Lead",
     tech: ["Figma", "HTML", "CSS", "jQuery", "Java", "AEM"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -221,8 +221,8 @@ export const caseStudies = [
       "Improved UI responsiveness across enterprise-level pages.",
       "Ensured proper integration with AEM components."
     ],
-    challenge: "Maintaining brand consistency across a large corporate website.",
-    outcomes: "Improved responsiveness and brand consistency.",
+    challenge: "A key challenge involved maintaining and optimizing NCR’s large-scale corporate website, balancing complex content structures, multiple stakeholder requirements, and the need for consistent brand representation across all digital touchpoints.",
+    outcomes: "Delivered a more consistent and user-friendly corporate website through ongoing UI enhancements, refined content presentation, and improved collaboration with cross-functional teams, strengthening NCR’s digital presence.",
     color: "from-emerald-600 to-green-500"
   },
   {
@@ -230,7 +230,7 @@ export const caseStudies = [
     title: "NetApp – Software Download Portal",
     client: "NetApp",
     showComparison: false,
-    overview: "Software download portal for NetApp’s product ecosystem.",
+    overview: "A comprehensive software download portal designed to serve NetApp’s product ecosystem, enabling customers to securely access software packages, updates, and related resources.",
     role: "UX Researcher & Designer",
     tech: ["HTML", "CSS", "jQuery", "Java", "Figma"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -239,8 +239,8 @@ export const caseStudies = [
       "Developed front-end screens ensuring smooth user workflows.",
       "Structured pages for future AEM integration."
     ],
-    challenge: "Simplifying software discovery in a complex product ecosystem.",
-    outcomes: "Smoother user workflows and simplified software discovery.",
+    challenge: "A key challenge involved streamlining the user experience within a large and highly technical software download portal, simplifying navigation, reducing friction, and ensuring users could efficiently locate and download the appropriate NetApp software and updates.",
+    outcomes: "Achieved a significantly improved download experience through enhanced navigation, clearer information architecture, and streamlined user flows-resulting in faster access to software and greater user satisfaction.",
     color: "from-blue-700 to-cyan-600"
   },
   {
@@ -248,8 +248,8 @@ export const caseStudies = [
     title: "Costco Tires",
     client: "Costco",
     showComparison: false,
-    overview: "E-commerce portal for Costco tires.",
-    role: "UI Designer",
+    overview: "Led the implementation of WCAG accessibility standards for the Costco Tires e-commerce portal, enhancing compliance, usability, and accessibility for a diverse customer base.",
+    role: "Accessibility Specialist",
     tech: ["HTML", "CSS", "ASP.Net", "Adobe XD"],
     images: [costcoOne, costcoThree, costcoFour],
     responsibilities: [
@@ -257,8 +257,8 @@ export const caseStudies = [
       "Improved overall UI layout and ordering experience.",
       "Enhanced visual structure for easier product exploration."
     ],
-    challenge: "Improving the tire ordering experience and visual structure.",
-    outcomes: "Enhanced visual structure and ordering experience.",
+    challenge: "A key challenge involved ensuring that the Costco Tires e-commerce experience adhered to WCAG accessibility standards, requiring updates to UI components, interaction patterns, and underlying code to support an inclusive and compliant shopping experience.",
+    outcomes: "Delivered a more accessible and compliant e-commerce experience by implementing WCAG standards, resulting in improved usability, reduced barriers for customers with disabilities, and alignment with industry accessibility best practices.",
     color: "from-blue-900 to-slate-800"
   },
   {
@@ -266,7 +266,7 @@ export const caseStudies = [
     title: "ELCOM",
     client: "ELCOM UK",
     showComparison: false,
-    overview: "E-procurement and e-funding solution interface.",
+    overview: "A comprehensive interface for Elcom’s e-procurement and e-funding solutions, enabling organizations to manage purchasing, funding requests, and financial workflows efficiently and transparently.",
     role: "UI/UX Designer",
     tech: ["HTML", "CSS", "Classic ASP", "Java", "Adobe XD"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -275,8 +275,8 @@ export const caseStudies = [
       "Analyzed UX issues and implemented usability improvements.",
       "Simplified the navigation experience for enterprise users."
     ],
-    challenge: "Supporting complex workflows in an e-procurement system.",
-    outcomes: "Simplified navigation and improved usability for enterprise users.",
+    challenge: "A key challenge involved simplifying intricate procurement and funding processes, transforming them into an intuitive and efficient user experience that supports seamless decision-making and reduces operational bottlenecks.",
+    outcomes: "Achieved a significantly more usable and streamlined interface, providing clearer workflows, enhanced task efficiency, and a smoother user experience across Elcom’s e-procurement and e-funding operations.",
     color: "from-slate-600 to-gray-700"
   },
   {
@@ -284,8 +284,8 @@ export const caseStudies = [
     title: "Genesis CPO",
     client: "Hyundai USA",
     showComparison: false,
-    overview: "Genesis Certified Pre-Owned vehicle showcase platform.",
-    role: "UI Designer",
+    overview: "A comprehensive showcase platform for Genesis Certified Pre-Owned vehicles, enabling prospective buyers to explore detailed listings, compare models, and access essential vehicle information within a premium brand experience.",
+    role: "UI/UX Designer",
     tech: ["HTML5", "CSS3", "jQuery", "Bootstrap", "Java", "AEM", "Adobe XD"],
     images: [genesisTwo, genesisOne, genesisThree],
     responsibilities: [
@@ -293,8 +293,8 @@ export const caseStudies = [
       "Developed templates compatible with AEM.",
       "Improved UX of search, filter, and detail pages."
     ],
-    challenge: "Creating a premium browsing experience for luxury vehicles.",
-    outcomes: "Optimized UI for premium vehicle browsing.",
+    challenge: "A key challenge involved crafting a premium, brand-aligned digital experience that allowed users to seamlessly browse Genesis Certified Pre-Owned vehicles, ensuring the interface met luxury design standards while remaining highly functional and user-centric.",
+    outcomes: "Achieved a premium, intuitive browsing experience that elevated the presentation of Genesis Certified Pre-Owned vehicles, enhanced user engagement, and aligned closely with the brand’s luxury design ethos.",
     color: "from-slate-800 to-black"
   },
   {
@@ -302,7 +302,7 @@ export const caseStudies = [
     title: "AMS UI/UX Upgradation",
     client: "NCR",
     showComparison: false,
-    overview: "UI modernization for AMS system.",
+    overview: "A comprehensive UI modernization initiative for the AMS system, aimed at enhancing usability, streamlining workflows, and delivering a more intuitive and visually consistent user experience.",
     role: "Lead UI/UX Designer",
     tech: ["HTML5", "CSS3", "jQuery", "ASP.NET", "Adobe XD"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -311,8 +311,8 @@ export const caseStudies = [
       "Streamlined layout for better functional clarity.",
       "Enhanced interface for ease of use across modules."
     ],
-    challenge: "Modernizing the AMS system for better clarity and ease of use.",
-    outcomes: "Streamlined layout and enhanced functional clarity.",
+    challenge: "A key challenge involved transforming a dated AMS interface into a modern, user-centric experience by resolving navigation complexities, improving workflow efficiency, and establishing consistent design standards.",
+    outcomes: "Achieved a fully modernized and cohesive AMS interface that improved user efficiency, reduced friction in daily workflows, and established a scalable design foundation for future enhancements.",
     color: "from-emerald-700 to-green-800"
   },
   {
@@ -320,7 +320,7 @@ export const caseStudies = [
     title: "Discover",
     client: "Trisept Solutions, USA",
     showComparison: false,
-    overview: "Travel booking system for agents.",
+    overview: "A specialized travel booking system built for travel agents, enabling them to search, book, and manage travel itineraries efficiently across multiple destinations and services.",
     role: "UI Developer",
     tech: ["XHTML", "CSS", "jQuery", "MVC", "Adobe XD"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -329,8 +329,8 @@ export const caseStudies = [
       "Created clear, structured page templates.",
       "Improved consistency in booking flow interactions."
     ],
-    challenge: "Ensuring operational efficiency for travel agents.",
-    outcomes: "Improved consistency and efficiency in booking flows.",
+    challenge: "A key challenge involved simplifying the multi-step travel booking process for agents-reducing friction, minimizing errors, and enabling quick access to essential travel options across flights, hotels, and packages.",
+    outcomes: "Achieved a more streamlined and agent-friendly booking experience, enhancing workflow efficiency, reducing booking time, and enabling agents to deliver better service to their customers.",
     color: "from-orange-600 to-yellow-600"
   },
   {
@@ -338,7 +338,7 @@ export const caseStudies = [
     title: "Propel (Web & Mobile)",
     client: "HP",
     showComparison: false,
-    overview: "IT request management and provisioning system.",
+    overview: "A comprehensive IT request management and provisioning platform available on both web and mobile, enabling employees to submit, track, and manage IT service requests efficiently while improving operational visibility for IT teams.",
     role: "UI Designer",
     tech: ["HTML5", "CSS3", "jQuery", "C#", "MVC3", "XML", "SQL Server", "Adobe XD"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -347,16 +347,16 @@ export const caseStudies = [
       "Built interactive front-end screens using modern web standards.",
       "Structured workflows to improve request submission experience."
     ],
-    challenge: "Designing a unified experience for both web and mobile platforms.",
-    outcomes: "Improved request submission experience across devices.",
+    challenge: "A key challenge involved designing a unified, cross-platform experience that simplified IT request submission, tracking, and provisioning. This required harmonizing workflows, reducing user friction, and ensuring consistency between the web and mobile applications.",
+    outcomes: "Achieved a cohesive web and mobile experience with streamlined workflows, improved request visibility, and enhanced usability-empowering employees to manage IT requests with greater ease while enabling IT teams to respond more efficiently.",
     color: "from-blue-500 to-indigo-500"
   },
   {
     id: "hershey-hrs",
-    title: "Hershey – HRS System",
+    title: "Hershey - HRS System",
     client: "Hershey, USA",
     showComparison: false,
-    overview: "Customer vacation booking and package management system.",
+    overview: "A comprehensive vacation booking and package management platform that enables customers to explore destinations, customize packages, and manage their travel itineraries with ease.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "jQuery", "C#", "ASP.NET", "XML", "SQL Server", "Adobe XD"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -365,8 +365,8 @@ export const caseStudies = [
       "Improved UX for inventory selection and booking sections.",
       "Ensured visual consistency across modules."
     ],
-    challenge: "Creating a seamless trip planning experience for customers.",
-    outcomes: "Improved UX for booking and inventory selection.",
+    challenge: "A key challenge involved transforming a complex vacation booking workflow into an intuitive, user-centric experience-making it easier for customers to browse destinations, tailor packages, and manage their travel details with confidence and clarity.",
+    outcomes: "Achieved a streamlined, user-friendly booking experience with simplified workflows, improved package customization, and greater visibility into travel details-leading to higher customer satisfaction and smoother end-to-end interactions.",
     color: "from-amber-800 to-amber-900"
   },
   {
@@ -374,7 +374,7 @@ export const caseStudies = [
     title: "Hotel Solution Direct",
     client: "HSD UK",
     showComparison: false,
-    overview: "Room booking and travel management system.",
+    overview: "A comprehensive room booking and travel management platform that enables users to search accommodations, make reservations, and manage their travel itineraries efficiently and seamlessly.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "Java", "JSF", "Richfaces", "JavaScript", "MySQL", "XML", "WebSphere", "Adobe XD"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -383,8 +383,8 @@ export const caseStudies = [
       "Conducted UX analysis to optimize booking steps.",
       "Improved page structure for large content modules."
     ],
-    challenge: "Optimizing booking steps and handling large content modules.",
-    outcomes: "Enhanced user navigation and optimized booking steps.",
+    challenge: "A key challenge involved simplifying complex booking and travel management workflows-ensuring users could effortlessly search for rooms, compare options, make reservations, and manage their travel details within a clear and user-friendly interface.",
+    outcomes: "Achieved a streamlined, intuitive booking experience with optimized workflows and clearer navigation-enabling users to manage accommodations and travel plans more confidently and efficiently.",
     color: "from-indigo-500 to-purple-500"
   },
   {
@@ -392,7 +392,7 @@ export const caseStudies = [
     title: "Video Travel Deals",
     client: "Trisept Solutions, USA",
     showComparison: false,
-    overview: "Video-driven luxury travel planning platform.",
+    overview: "A visually rich, video-driven platform designed to help users discover and plan luxury travel experiences by showcasing destinations, offers, and curated itineraries through immersive video content.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "JavaScript", "MOSS 2007", "ASP.NET 3.5", "WCF", "Adobe Photoshop"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -401,8 +401,8 @@ export const caseStudies = [
       "Improved UX for video browsing and package exploration.",
       "Structured content layouts for better engagement."
     ],
-    challenge: "Designing a media-rich platform for high-impact storytelling.",
-    outcomes: "Improved engagement through better video browsing and content layouts.",
+    challenge: "A key challenge involved building a visually rich, video-centric interface that inspired users to explore luxury travel options-ensuring smooth playback, clear navigation, and an engaging content experience ",
+    outcomes: "Achieved a highly engaging luxury travel planning experience by integrating seamless video content, intuitive navigation, and visually appealing layouts-resulting in stronger user interest and more informed travel decisions.",
     color: "from-pink-600 to-rose-600"
   },
   {
@@ -428,7 +428,7 @@ export const caseStudies = [
     title: "Disney Magical Celebrations",
     client: "Walt Disney World, USA",
     showComparison: false,
-    overview: "Celebration and event experience booking interface.",
+    overview: "A specialized booking interface that enables guests to explore, customize, and reserve Disney celebration and event experiences, delivering a seamless and magical planning journey aligned with the Disney brand.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "Java", "JSF", "Richfaces", "JavaScript", "XML", "WebSphere", "Adobe Photoshop"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -437,8 +437,8 @@ export const caseStudies = [
       "Developed user-friendly layouts for event scheduling.",
       "Improved the clarity of content-heavy pages."
     ],
-    challenge: "Aligning interactive UI screens with the Disney brand style.",
-    outcomes: "User-friendly layouts for event scheduling and improved clarity.",
+    challenge: "A key challenge involved crafting a user-friendly, emotionally engaging interface that reflected the Disney brand’s sense of magic and wonder-while ensuring guests could easily explore celebration options, customize experiences, and complete bookings without friction.",
+    outcomes: "Achieved a seamless, delightfully immersive booking experience that elevated the planning of Disney celebrations-improving usability, enhancing visual appeal, and reinforcing the brand’s signature sense of magic and joy.",
     color: "from-blue-400 to-pink-400"
   },
   {
@@ -446,7 +446,7 @@ export const caseStudies = [
     title: "Door2Tour",
     client: "Door2Tour, UK",
     showComparison: false,
-    overview: "UK-based travel and tour booking portal.",
+    overview: "A comprehensive UK-based travel and tour booking portal that enables users to browse, compare, and reserve a wide range of coach tours and travel experiences with ease.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "JavaScript", "C#", "ASP.NET", "XML", "SQL Server", "Kentico CMS", "Adobe Photoshop"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -455,8 +455,8 @@ export const caseStudies = [
       "Enhanced navigation and filter usability.",
       "Improved overall consistency across pages."
     ],
-    challenge: "Facilitating fast tour discovery and booking.",
-    outcomes: "Enhanced navigation and filter usability.",
+    challenge: "A key challenge involved transforming a complex tour discovery and booking journey into an intuitive, user-friendly experience-allowing customers to effortlessly browse tours, compare details, and complete bookings across a wide variety of travel offerings.",
+    outcomes: "Achieved a significantly enhanced booking experience with streamlined navigation, improved tour presentation, and more intuitive workflows-helping users find and reserve the right UK tour experiences with greater ease.",
     color: "from-green-600 to-teal-600"
   },
   {
@@ -464,7 +464,7 @@ export const caseStudies = [
     title: "IHML",
     client: "IHML UK",
     showComparison: false,
-    overview: "Hotel reservations and travel package management platform.",
+    overview: "A comprehensive hotel reservation and travel package management platform that allows users to search accommodations, customize packages, and manage travel itineraries seamlessly.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "Java", "J2EE", "XML", "WebSphere", "Adobe Photoshop"],
     images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
@@ -473,8 +473,8 @@ export const caseStudies = [
       "Ensured seamless integration with Java backend systems.",
       "Optimized UI for operational efficiency."
     ],
-    challenge: "Designing for a complex hotel reservation and package management system.",
-    outcomes: "Optimized UI for better operational efficiency.",
+    challenge: "A key challenge involved transforming complex hotel booking and travel package management workflows into a clear, intuitive experience-making it easier for users to explore options, customize packages, and manage itineraries without confusion or friction.",
+    outcomes: "Achieved a more streamlined and user-friendly experience with optimized booking flows, clearer navigation, and improved task efficiency-helping users manage hotel reservations and travel packages with greater ease and confidence.",
     color: "from-cyan-700 to-blue-700"
   }
 ];
