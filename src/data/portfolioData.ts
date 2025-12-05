@@ -1,11 +1,77 @@
-
-
-
 import exampleProjectImage from 'figma:asset/fallback-pic.png';
-import prAfter from '../assets/projects/prometric/prometric-modern.png';
+
 import prBefore from '../assets/projects/prometric/prometric-legacy.png';
+import prAfter from '../assets/projects/prometric/prometric-modern.png';
+import prOne from '../assets/projects/prometric/prometric-1.png';
+import prTwo from '../assets/projects/prometric/prometric-2.png';
+import prThree from '../assets/projects/prometric/prometric-3.png';
+import prFour from '../assets/projects/prometric/prometric-4.png';
+
+import gpsBefore from '../assets/projects/dcli/dcli-legacy.png';
+import gpsAfter from '../assets/projects/dcli/dcli-modern.png';
+import gpsOne from '../assets/projects/dcli/dcli-modern.png';
+import gpsTwo from '../assets/projects/dcli/dcli-2.png';
+import gpsThree from '../assets/projects/dcli/dcli-3.png';
+
+import iaiBefore from '../assets/projects/iai/iai-legacy.png';
+import iaiAfter from '../assets/projects/iai/iai-modern.png';
+import iaiOne from '../assets/projects/iai/iai-2.png';
+import iaiTwo from '../assets/projects/iai/iai-3.png';
+import iaiThree from '../assets/projects/iai/iai-4.png';
+import iaiFour from '../assets/projects/iai/iai-5.png';
+
+import otBefore from '../assets/projects/ot/ot-legacy.png';
+import otAfter from '../assets/projects/ot/ot-modern.png';
+import otOne from '../assets/projects/ot/ot-modern.png';
+import otTwo from '../assets/projects/ot/ot-2.png';
+import otThree from '../assets/projects/ot/ot-3.png';
+
+import riverbedBefore from '../assets/projects/riverbed/riverbed-legacy.png';
+import riverbedAfter from '../assets/projects/riverbed/riverbed-modern.png';
+import riverbedOne from '../assets/projects/riverbed/riverbed-modern.png';
+import riverbedTwo from '../assets/projects/riverbed/riverbed2.png';
+import riverbedThree from '../assets/projects/riverbed/riverbed3.png';
+import riverbedFour from '../assets/projects/riverbed/riverbed4.png';
+import riverbedFive from '../assets/projects/riverbed/riverbed5.png';
+
+import hyundaiOne from '../assets/projects/hyundai/hyundai1.png';
+import hyundaiTwo from '../assets/projects/hyundai/hyundai2.png';
+import hyundaiThree from '../assets/projects/hyundai/hyundai3.png';
+import hyundaiFour from '../assets/projects/hyundai/hyundai4.png';
+
+import costcoOne from '../assets/projects/costco/costco-tires1.png';
+import costcoThree from '../assets/projects/costco/costco-tires1.png';
+import costcoFour from '../assets/projects/costco/costco-tires1.png';
+
+import genesisOne from '../assets/projects/genesis/genesis1.png';
+import genesisTwo from '../assets/projects/genesis/genesis2.png';
+import genesisThree from '../assets/projects/genesis/genesis3.png';
+
+
 
 export const caseStudies = [
+    {
+    id: "prometric",
+    title: "Prometric Exam Creation",
+    client: "Prometric",
+    showComparison: true,
+    overview: "Migration of legacy Flex modules into a fully modernized React-based application.",
+    role: "Lead UX Designer",
+    tech: ["Figma", "HTML", "SCSS", "KendoReact"],
+
+    beforeImage: prBefore,
+    afterImage: prAfter,
+
+    images: [prOne, prTwo, prThree, prFour],
+    responsibilities: [
+      "Designed and developed UI components aligned with modern UX patterns.",
+      "Improved interaction flows to ensure smoother user navigation.",
+      "Enhanced accessibility and performed WCAG 2.1 AA compliance checks."
+    ],
+    challenge: "Legacy Flex modules were outdated and difficult to maintain, requiring a complete modernization to React.",
+    outcomes: "Successfully migrated to a modern React application with improved accessibility and user experience.",
+    color: "from-blue-600 to-cyan-500"
+  },
   {
     id: "gps-navigation",
     title: "GPS Navigation",
@@ -14,7 +80,9 @@ export const caseStudies = [
     overview: "Web UI Development and Mobile App Development.",
     role: "Lead UX Designer",
     tech: ["Figma", "ChatGPT"],
-    images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
+    beforeImage: gpsBefore,
+    afterImage: gpsAfter,
+    images: [gpsOne, gpsTwo, gpsThree],
     responsibilities: [
       "Designed prototype in Figma",
       "Created Design System",
@@ -32,7 +100,9 @@ export const caseStudies = [
     overview: "UI Modernization and Mobile App Development.",
     role: "Lead UX Designer",
     tech: ["Figma", "HTML", "SCSS", "React"],
-    images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
+    beforeImage: iaiBefore,
+    afterImage: iaiAfter,
+    images: [iaiAfter, iaiOne, iaiTwo, iaiThree, iaiFour],
     responsibilities: [
       "Designed prototype in Figma",
       "Designed and developed UI components aligned with modern UX patterns.",
@@ -44,28 +114,6 @@ export const caseStudies = [
     color: "from-purple-600 to-indigo-600"
   },
   {
-    id: "prometric",
-    title: "Prometric Exam Creation",
-    client: "Prometric",
-    showComparison: true,
-    overview: "Migration of legacy Flex modules into a fully modernized React-based application.",
-    role: "Lead UX Designer",
-    tech: ["Figma", "HTML", "SCSS", "KendoReact"],
-
-    beforeImage: [prAfter],
-    afterImage: [prBefore],
-
-    images: [prBefore, prAfter],
-    responsibilities: [
-      "Designed and developed UI components aligned with modern UX patterns.",
-      "Improved interaction flows to ensure smoother user navigation.",
-      "Enhanced accessibility and performed WCAG 2.1 AA compliance checks."
-    ],
-    challenge: "Legacy Flex modules were outdated and difficult to maintain, requiring a complete modernization to React.",
-    outcomes: "Successfully migrated to a modern React application with improved accessibility and user experience.",
-    color: "from-blue-600 to-cyan-500"
-  },
-  {
     id: "officer-track",
     title: "Off Duty Management",
     client: "OfficerTRACK",
@@ -73,7 +121,9 @@ export const caseStudies = [
     overview: "UI redesign and development for a law enforcement activity tracking system.",
     role: "Product Designer",
     tech: ["Figma", "HTML", "CSS", "jQuery"],
-    images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
+    beforeImage: otBefore,
+    afterImage: otAfter,
+    images: [otOne, otTwo, otThree],
     responsibilities: [
       "Refined UI layouts for clarity and operational efficiency.",
       "Conducted accessibility evaluation based on WCAG 2.1 AA.",
@@ -91,7 +141,9 @@ export const caseStudies = [
     overview: "Enhancements and maintenance of Riverbed’s global support portal.",
     role: "UX/UI Designer",
     tech: ["Adobe XD", "Figma", "AEM"],
-    images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
+    beforeImage: riverbedBefore,
+    afterImage: riverbedAfter,
+    images: [riverbedOne, riverbedTwo, riverbedThree, riverbedFour, riverbedFive],
     responsibilities: [
       "Designed UI enhancements and contributed to UX refinements.",
       "Integrated front-end features with AEM and managed publish workflows.",
@@ -105,7 +157,7 @@ export const caseStudies = [
     id: "sabre-inc",
     title: "Sabre Inc.",
     client: "Sabre",
-    showComparison: true,
+    showComparison: false,
     overview: "UI enhancement and accessibility improvements for Sabre client website.",
     role: "UI Designer",
     tech: ["Figma", "WCAG 2.0"],
@@ -123,7 +175,7 @@ export const caseStudies = [
     id: "my-hyundai",
     title: "My Hyundai",
     client: "Hyundai America",
-    showComparison: true,
+    showComparison: false,
     overview: "Hyundai Owner Profile interface used by Hyundai vehicle customers.",
     role: "Senior UI/UX Designer",
     tech: ["Figma", "HTML", "CSS", "jQuery", "AEM"],
@@ -141,11 +193,11 @@ export const caseStudies = [
     id: "cpo-hyundai",
     title: "CPO Hyundai",
     client: "Hyundai America",
-    showComparison: true,
+    showComparison: false,
     overview: "Portal showcasing Hyundai Certified Pre-Owned vehicles.",
     role: "Senior UI/UX Designer",
     tech: ["Figma", "HTML", "CSS", "jQuery", "AEM"],
-    images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
+    images: [hyundaiOne, hyundaiTwo, hyundaiThree, hyundaiFour],
     responsibilities: [
       "Designed clean UI layouts supporting vehicle search and filtering.",
       "Developed responsive front-end templates for AEM components.",
@@ -159,7 +211,7 @@ export const caseStudies = [
     id: "ncr-com",
     title: "NCR.com",
     client: "NCR",
-    showComparison: true,
+    showComparison: false,
     overview: "NCR’s official corporate website.",
     role: "UI Designer & Front-End Lead",
     tech: ["Figma", "HTML", "CSS", "jQuery", "Java", "AEM"],
@@ -177,7 +229,7 @@ export const caseStudies = [
     id: "netapp-software",
     title: "NetApp – Software Download Portal",
     client: "NetApp",
-    showComparison: true,
+    showComparison: false,
     overview: "Software download portal for NetApp’s product ecosystem.",
     role: "UX Researcher & Designer",
     tech: ["HTML", "CSS", "jQuery", "Java", "Figma"],
@@ -195,11 +247,11 @@ export const caseStudies = [
     id: "costco-tires",
     title: "Costco Tires",
     client: "Costco",
-    showComparison: true,
+    showComparison: false,
     overview: "E-commerce portal for Costco tires.",
     role: "UI Designer",
     tech: ["HTML", "CSS", "ASP.Net", "Adobe XD"],
-    images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
+    images: [costcoOne, costcoThree, costcoFour],
     responsibilities: [
       "Implemented accessibility features aligned with WCAG 2.0 A.",
       "Improved overall UI layout and ordering experience.",
@@ -213,7 +265,7 @@ export const caseStudies = [
     id: "elcom",
     title: "ELCOM",
     client: "ELCOM UK",
-    showComparison: true,
+    showComparison: false,
     overview: "E-procurement and e-funding solution interface.",
     role: "UI/UX Designer",
     tech: ["HTML", "CSS", "Classic ASP", "Java", "Adobe XD"],
@@ -231,11 +283,11 @@ export const caseStudies = [
     id: "genesis-cpo",
     title: "Genesis CPO",
     client: "Hyundai USA",
-    showComparison: true,
+    showComparison: false,
     overview: "Genesis Certified Pre-Owned vehicle showcase platform.",
     role: "UI Designer",
     tech: ["HTML5", "CSS3", "jQuery", "Bootstrap", "Java", "AEM", "Adobe XD"],
-    images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
+    images: [genesisTwo, genesisOne, genesisThree],
     responsibilities: [
       "Designed UI layouts optimized for premium vehicle browsing.",
       "Developed templates compatible with AEM.",
@@ -249,7 +301,7 @@ export const caseStudies = [
     id: "ams-ui-ux",
     title: "AMS UI/UX Upgradation",
     client: "NCR",
-    showComparison: true,
+    showComparison: false,
     overview: "UI modernization for AMS system.",
     role: "Lead UI/UX Designer",
     tech: ["HTML5", "CSS3", "jQuery", "ASP.NET", "Adobe XD"],
@@ -267,7 +319,7 @@ export const caseStudies = [
     id: "discover",
     title: "Discover",
     client: "Trisept Solutions, USA",
-    showComparison: true,
+    showComparison: false,
     overview: "Travel booking system for agents.",
     role: "UI Developer",
     tech: ["XHTML", "CSS", "jQuery", "MVC", "Adobe XD"],
@@ -285,7 +337,7 @@ export const caseStudies = [
     id: "propel",
     title: "Propel (Web & Mobile)",
     client: "HP",
-    showComparison: true,
+    showComparison: false,
     overview: "IT request management and provisioning system.",
     role: "UI Designer",
     tech: ["HTML5", "CSS3", "jQuery", "C#", "MVC3", "XML", "SQL Server", "Adobe XD"],
@@ -303,7 +355,7 @@ export const caseStudies = [
     id: "hershey-hrs",
     title: "Hershey – HRS System",
     client: "Hershey, USA",
-    showComparison: true,
+    showComparison: false,
     overview: "Customer vacation booking and package management system.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "jQuery", "C#", "ASP.NET", "XML", "SQL Server", "Adobe XD"],
@@ -321,7 +373,7 @@ export const caseStudies = [
     id: "hotel-solution-direct",
     title: "Hotel Solution Direct",
     client: "HSD UK",
-    showComparison: true,
+    showComparison: false,
     overview: "Room booking and travel management system.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "Java", "JSF", "Richfaces", "JavaScript", "MySQL", "XML", "WebSphere", "Adobe XD"],
@@ -339,7 +391,7 @@ export const caseStudies = [
     id: "video-travel-deals",
     title: "Video Travel Deals",
     client: "Trisept Solutions, USA",
-    showComparison: true,
+    showComparison: false,
     overview: "Video-driven luxury travel planning platform.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "JavaScript", "MOSS 2007", "ASP.NET 3.5", "WCF", "Adobe Photoshop"],
@@ -357,7 +409,7 @@ export const caseStudies = [
     id: "voyage",
     title: "Voyage",
     client: "Trisept Solutions, USA",
-    showComparison: true,
+    showComparison: false,
     overview: "Luxury lifestyle and travel inspiration platform.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "JavaScript", "MOSS 2007", "ASP.NET 3.5", "WCF", "Adobe Photoshop"],
@@ -375,7 +427,7 @@ export const caseStudies = [
     id: "disney-magical-celebrations",
     title: "Disney Magical Celebrations",
     client: "Walt Disney World, USA",
-    showComparison: true,
+    showComparison: false,
     overview: "Celebration and event experience booking interface.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "Java", "JSF", "Richfaces", "JavaScript", "XML", "WebSphere", "Adobe Photoshop"],
@@ -393,7 +445,7 @@ export const caseStudies = [
     id: "door2tour",
     title: "Door2Tour",
     client: "Door2Tour, UK",
-    showComparison: true,
+    showComparison: false,
     overview: "UK-based travel and tour booking portal.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "JavaScript", "C#", "ASP.NET", "XML", "SQL Server", "Kentico CMS", "Adobe Photoshop"],
@@ -411,7 +463,7 @@ export const caseStudies = [
     id: "ihml",
     title: "IHML",
     client: "IHML UK",
-    showComparison: true,
+    showComparison: false,
     overview: "Hotel reservations and travel package management platform.",
     role: "UI Designer",
     tech: ["XHTML", "CSS", "Java", "J2EE", "XML", "WebSphere", "Adobe Photoshop"],

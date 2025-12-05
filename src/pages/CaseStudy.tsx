@@ -265,47 +265,66 @@ const closeModal = () => {
               {/* Comparison Grid (Simulated Before/After) */}
               {study.showComparison && (
                 <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <div className="bg-slate-900 rounded-xl border border-white/5 p-1">
-                    <div className="aspect-video bg-slate-950 relative rounded-lg overflow-hidden group">
-                       {study.images && study.images[0] ? (
-                         <ImageWithFallback 
-                           src={study.images[0]} 
-                           alt="Previous Interface" 
-                           className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 cursor-pointer" 
-                           onClick={() => openModal(study.images[0])}
-                         />
-                       ) : <div className="w-full h-full bg-slate-800" />}
-                       <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded text-xs font-medium text-white border border-white/10">
-                         Before
-                       </div>
-                    </div>
-                  </div>
-                  <h3 className="text-lg font-medium text-slate-400">Legacy Interface</h3>
-                  <p className="text-sm text-slate-500">The original system suffered from outdated interaction patterns and poor accessibility.</p>
-                </div>
 
-                <div className="space-y-4">
-                  <div className="bg-slate-900 rounded-xl border border-white/5 p-1">
-                    <div className="aspect-video bg-slate-950 relative rounded-lg overflow-hidden group">
-                       {study.images && study.images[0] ? (
-                         <ImageWithFallback 
-                           src={study.images[0]} 
-                           alt="New Interface" 
-                           className="w-full h-full object-cover transition-all duration-500 cursor-pointer" 
-                           onClick={() => openModal(study.images[0])}
-                         />
-                       ) : <div className="w-full h-full bg-slate-800" />}
-                       <div className="absolute top-4 left-4 bg-blue-600/90 backdrop-blur-md px-3 py-1 rounded text-xs font-medium text-white shadow-lg ">
-                         After
-                       </div>
+                  {/* BEFORE */}
+                  <div className="space-y-4">
+                    <div className="bg-slate-900 rounded-xl border border-white/5 p-1">
+                      <div className="aspect-video bg-slate-950 relative rounded-lg overflow-hidden group">
+
+                        {study.beforeImage ? (
+                          <ImageWithFallback
+                            src={study.beforeImage}
+                            alt="Before Interface"
+                            className="w-full h-full  object-contain opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 cursor-pointer"
+                            onClick={() => openModal(study.beforeImage)}
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-slate-800" />
+                        )}
+
+                        <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded text-xs font-medium text-white border border-white/10">
+                          Before
+                        </div>
+                      </div>
                     </div>
+
+                    <h3 className="text-lg font-medium text-slate-400">Legacy Interface</h3>
+                    <p className="text-sm text-slate-500">
+                      The original system suffered from outdated interaction patterns.
+                    </p>
                   </div>
-                  <h3 className="text-lg font-medium text-white">Modernized Experience</h3>
-                  <p className="text-sm text-slate-400">A streamlined, accessible, and component-driven interface designed for scale.</p>
+
+                  {/* AFTER */}
+                  <div className="space-y-4">
+                    <div className="bg-slate-900 rounded-xl border border-white/5 p-1">
+                      <div className="aspect-video bg-slate-950 relative rounded-lg overflow-hidden group">
+
+                        {study.afterImage ? (
+                          <ImageWithFallback
+                            src={study.afterImage}
+                            alt="Modern Interface"
+                            className="w-full h-full  object-contain transition-all duration-500 cursor-pointer"
+                            onClick={() => openModal(study.afterImage)}
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-slate-800" />
+                        )}
+
+                        <div className="absolute top-4 left-4 bg-blue-600/90 backdrop-blur-md px-3 py-1 rounded text-xs font-medium text-white shadow-lg">
+                          After
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 className="text-lg font-medium text-white">Modernized Experience</h3>
+                    <p className="text-sm text-slate-400">
+                      A streamlined and accessible interface designed for scale.
+                    </p>
+                  </div>
+
                 </div>
-              </div>
               )}
+
               
             </section>
 
