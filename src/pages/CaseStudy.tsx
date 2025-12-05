@@ -1,11 +1,14 @@
 
 import React, { useEffect, useState } from 'react';
+import ImageModal from "../components/ImageModal";
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, CheckCircle2, Layers, Lightbulb, Trophy, Code2, Briefcase, ChevronRight, ChevronLeft, Monitor, Smartphone, MousePointer2 } from 'lucide-react';
 import Slider from 'react-slick';
 import { caseStudies } from '../data/portfolioData';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { motion } from 'motion/react';
+
+
 
 // Custom Arrows for Carousel
 function NextArrow(props: any) {
@@ -33,6 +36,19 @@ function PrevArrow(props: any) {
 }
 
 export default function CaseStudy() {
+  const [modalOpen, setModalOpen] = useState(false);
+const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+const openModal = (img: string) => {
+  setSelectedImage(img);
+  setModalOpen(true);
+};
+
+const closeModal = () => {
+  setModalOpen(false);
+  setSelectedImage(null);
+};
+
   const { id } = useParams();
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState('overview');
@@ -255,7 +271,8 @@ export default function CaseStudy() {
                          <ImageWithFallback 
                            src={study.images[0]} 
                            alt="Previous Interface" 
-                           className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" 
+                           className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 cursor-pointer" 
+                           onClick={() => openModal(study.images[0])}
                          />
                        ) : <div className="w-full h-full bg-slate-800" />}
                        <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded text-xs font-medium text-white border border-white/10">
@@ -274,10 +291,11 @@ export default function CaseStudy() {
                          <ImageWithFallback 
                            src={study.images[0]} 
                            alt="New Interface" 
-                           className="w-full h-full object-cover transition-all duration-500" 
+                           className="w-full h-full object-cover transition-all duration-500 cursor-pointer" 
+                           onClick={() => openModal(study.images[0])}
                          />
                        ) : <div className="w-full h-full bg-slate-800" />}
-                       <div className="absolute top-4 left-4 bg-blue-600/90 backdrop-blur-md px-3 py-1 rounded text-xs font-medium text-white shadow-lg">
+                       <div className="absolute top-4 left-4 bg-blue-600/90 backdrop-blur-md px-3 py-1 rounded text-xs font-medium text-white shadow-lg ">
                          After
                        </div>
                     </div>
@@ -401,7 +419,16 @@ export default function CaseStudy() {
             View Case Study <ArrowRight size={18} className="ml-2" />
           </Link>
         </div>
+
+        <ImageModal 
+  isOpen={modalOpen} 
+  image={selectedImage} 
+  onClose={closeModal} 
+/>
       </div>
     </div>
   );
+  
 }
+
+

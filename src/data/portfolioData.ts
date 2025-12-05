@@ -1,5 +1,9 @@
 
+
+
 import exampleProjectImage from 'figma:asset/fallback-pic.png';
+import prAfter from '../assets/projects/prometric/prometric-modern.png';
+import prBefore from '../assets/projects/prometric/prometric-legacy.png';
 
 export const caseStudies = [
   {
@@ -44,7 +48,11 @@ export const caseStudies = [
     overview: "Migration of legacy Flex modules into a fully modernized React-based application.",
     role: "Lead UX Designer",
     tech: ["Figma", "HTML", "SCSS", "KendoReact"],
-    images: [exampleProjectImage, exampleProjectImage, exampleProjectImage],
+
+    beforeImage: [prAfter],
+    afterImage: [prBefore],
+
+    images: [prBefore, prAfter],
     responsibilities: [
       "Designed and developed UI components aligned with modern UX patterns.",
       "Improved interaction flows to ensure smoother user navigation.",
