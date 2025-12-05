@@ -3,8 +3,9 @@ import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowRight, Layers, Code, CheckCircle2, Mail, Smartphone, MapPin, Linkedin } from 'lucide-react';
 import { caseStudies, experience, skills } from '../data/portfolioData';
-import jahangirPhoto from 'figma:asset/077135f68a21c72637562af7fb23a96c9f28708c.png';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+
+import jahangirPhoto from '../assets/jahangir-pic.png';
 
 export default function Home() {
   const location = useLocation();

@@ -1,5 +1,5 @@
 
-import exampleProjectImage from 'figma:asset/2752e5bbbaaf13f97616b48989edc3eca6e5b1b5.png';
+import exampleProjectImage from 'figma:asset/fallback-pic.png';
 
 export const caseStudies = [
   {

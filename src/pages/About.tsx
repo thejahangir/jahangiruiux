@@ -1,6 +1,6 @@
 
 import React from 'react';
-import jahangirPhoto from 'figma:asset/077135f68a21c72637562af7fb23a96c9f28708c.png';
+import jahangirPhoto from 'figma:asset/jahangir-pic.png';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { experience } from '../data/portfolioData';
 

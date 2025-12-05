@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import logoImage from 'figma:asset/d59f43bf64fbad542c2d8cf92f0966dd1885ab62.png';
+import logoImage from 'figma:asset/jahangir-logo.png';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
