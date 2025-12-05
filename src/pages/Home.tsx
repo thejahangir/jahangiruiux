@@ -1,5 +1,6 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState  } from 'react';
+import emailjs from "emailjs-com";
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowRight, Layers, Code, CheckCircle2, Mail, Smartphone, MapPin, Linkedin } from 'lucide-react';
 import { caseStudies, experience, skills } from '../data/portfolioData';
@@ -259,7 +260,7 @@ export default function Home() {
             </div>
 
             {/* Mini Form */}
-            <div className="w-full lg:w-1/2 max-w-lg bg-black border border-white/10 rounded-2xl p-8 shadow-2xl">
+            {/* <div className="w-full lg:w-1/2 max-w-lg bg-black border border-white/10 rounded-2xl p-8 shadow-2xl">
               <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
                 <div>
                    <label className="text-xs font-bold text-slate-500 uppercase mb-2 block">Name</label>
@@ -277,7 +278,11 @@ export default function Home() {
                    Send Message
                 </button>
               </form>
+            </div> */}
+            <div className="w-full lg:w-1/2 max-w-lg bg-black border border-white/10 rounded-2xl p-8 shadow-2xl">
+            <MiniEmailForm />
             </div>
+            
          </div>
       </section>
     </div>
@@ -318,5 +323,120 @@ function FeaturedProjectCard({ study }: { study: any }) {
         </div>
       </div>
     </Link>
+  );
+}
+
+
+// miniform starts here
+
+function MiniEmailForm() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  const handleChange = (e: any) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    emailjs
+      .send(
+        "service_3qycxmg",     // ✔ SAME AS CONTACT PAGE
+        "template_47tl7js",    // ✔ SAME AS CONTACT PAGE
+        form,                  
+        "vAPWH9UvrR8x3_j_2"    // ✔ SAME AS CONTACT PAGE
+      )
+      .then(() => {
+        setStatus("sent");
+        setForm({ name: "", email: "", message: "" });
+        setTimeout(() => setStatus("idle"), 3000);
+      })
+      .catch((err) => {
+        console.log("EMAILJS ERROR:", err);
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 3000);
+      })
+      .catch((err) => {
+  console.log("EMAILJS ERROR DETAILS:", err);
+  setStatus("error");
+  setTimeout(() => setStatus("idle"), 3000);
+});
+
+  };
+
+  return (
+    <form className="space-y-5" onSubmit={handleSubmit}>
+      
+      <div>
+        <label className="text-xs font-bold text-slate-500 uppercase mb-2 block">Name</label>
+        <input
+          name="name"
+          type="text"
+          required
+          value={form.name}
+          onChange={handleChange}
+          className="w-full bg-slate-900 border border-white/10 rounded-lg px-4 py-3 text-white 
+                     focus:border-blue-500 outline-none transition-colors placeholder:text-slate-600"
+          placeholder="John Doe"
+        />
+      </div>
+
+      <div>
+        <label className="text-xs font-bold text-slate-500 uppercase mb-2 block">Email</label>
+        <input
+          name="email"
+          type="email"
+          required
+          value={form.email}
+          onChange={handleChange}
+          className="w-full bg-slate-900 border border-white/10 rounded-lg px-4 py-3 text-white 
+                     focus:border-blue-500 outline-none transition-colors placeholder:text-slate-600"
+          placeholder="john@example.com"
+        />
+      </div>
+
+      <div>
+        <label className="text-xs font-bold text-slate-500 uppercase mb-2 block">Message</label>
+        <textarea
+          name="message"
+          rows={4}
+          required
+          value={form.message}
+          onChange={handleChange}
+          className="w-full bg-slate-900 border border-white/10 rounded-lg px-4 py-3 text-white 
+                     focus:border-blue-500 outline-none transition-colors resize-none placeholder:text-slate-600"
+          placeholder="Tell me about your project..."
+        ></textarea>
+      </div>
+
+      <button
+        disabled={status === "sending"}
+        className="w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-lg 
+                   hover:opacity-90 transition-opacity shadow-lg shadow-blue-900/20 disabled:opacity-50"
+      >
+        {status === "sending"
+          ? "Sending..."
+          : status === "sent"
+          ? "Message Sent!"
+          : status === "error"
+          ? "Error — Try Again"
+          : "Send Message"}
+      </button>
+
+      {status === "sent" && (
+        <p className="text-green-500 text-sm text-center">Your message has been sent!</p>
+      )}
+      {status === "error" && (
+        <p className="text-red-500 text-sm text-center">Something went wrong. Try again.</p>
+      )}
+      
+    </form>
   );
 }

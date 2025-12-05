@@ -263,7 +263,8 @@ const closeModal = () => {
               </div>
 
               {/* Comparison Grid (Simulated Before/After) */}
-              <div className="grid md:grid-cols-2 gap-8">
+              {study.showComparison && (
+                <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div className="bg-slate-900 rounded-xl border border-white/5 p-1">
                     <div className="aspect-video bg-slate-950 relative rounded-lg overflow-hidden group">
@@ -304,6 +305,8 @@ const closeModal = () => {
                   <p className="text-sm text-slate-400">A streamlined, accessible, and component-driven interface designed for scale.</p>
                 </div>
               </div>
+              )}
+              
             </section>
 
             {/* Responsibilities */}
