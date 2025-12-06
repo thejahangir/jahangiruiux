@@ -99,7 +99,7 @@ export default function Home() {
         <div className="mb-16 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Work</h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            A selection of 5 key case studies highlighting my expertise in enterprise UI/UX, GenAI-driven workflows, and frontend modernization.
+            A selection of 5 impactful case studies illustrating my strengths in enterprise UI/UX, GenAI-integrated design workflows, and large-scale frontend modernization initiatives.
           </p>
         </div>
 
@@ -121,7 +121,7 @@ export default function Home() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Expertise & Toolset</h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            Bridging the gap between creative design, technical implementation, and AI-driven workflows.
+            Bringing together creative design, technical implementation, and AI-driven workflows to deliver seamless, scalable, and forward-thinking digital experiences.
           </p>
         </div>
 
@@ -252,10 +252,6 @@ export default function Home() {
                        <div className="text-white">Bangalore, India</div>
                      </div>
                   </div>
-               </div>
-
-               <div className="flex gap-4 mt-10">
-                  <a href="#" className="p-3 rounded-full bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-colors"><Linkedin size={20} /></a>
                </div>
             </div>
 

@@ -135,11 +135,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
             <p className="text-white font-bold text-lg">Jahangir Alam</p>
-            <p className="text-slate-500 text-sm mt-1">GenAI Design Specialist & UI/UX Engineer</p>
-          </div>
-          <div className="flex space-x-8">
-             <a href="mailto:jahangirxl@gmail.com" className="text-slate-500 hover:text-white text-sm transition-colors">jahangirxl@gmail.com</a>
-             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-slate-500 hover:text-white text-sm transition-colors">LinkedIn</a>
+            <p className="text-slate-500 text-sm mt-1">GenAI Design Specialist & UI/UX Architect</p>
           </div>
           <div className="text-slate-600 text-xs">
             © {new Date().getFullYear()} Jahangir Alam. All rights reserved.

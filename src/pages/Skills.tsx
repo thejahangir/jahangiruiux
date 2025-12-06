@@ -144,7 +144,7 @@ export default function Skills() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed"
         >
-           A hybrid skill set bridging the gap between creative design, technical implementation, and cutting-edge AI tools.
+           A hybrid skill set that bridges UI/UX design, technical implementation, and advanced GenAI tools to create seamless, intelligent, and user-centric digital experiences.
         </motion.p>
       </div>
 

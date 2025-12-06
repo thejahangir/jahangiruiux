@@ -101,21 +101,6 @@ export default function Contact() {
 
               </ul>
 
-              <div className="pt-8 border-t border-white/5">
-                <h4 className="text-sm font-bold text-slate-400 mb-4">Connect Socially</h4>
-                <div className="flex gap-3">
-                  <a href="#" className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition-all">
-                    <Linkedin size={18} />
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-slate-700 hover:text-white transition-all">
-                    <Github size={18} />
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-pink-600 hover:text-white transition-all">
-                    <Globe size={18} />
-                  </a>
-                </div>
-              </div>
-
             </div>
           </div>
 
