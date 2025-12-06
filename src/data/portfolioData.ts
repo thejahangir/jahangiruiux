@@ -98,7 +98,7 @@ export const caseStudies = [
     client: "Antern Technology",
     showComparison: true,
     overview: "An end-to-end initiative involving UI modernization and mobile app development to enhance usability, improve performance, and deliver a seamless cross-platform experience.",
-    role: "Lead UX Designer",
+    role: "Principal UX Architect",
     tech: ["Figma", "HTML", "SCSS", "React"],
     beforeImage: iaiBefore,
     afterImage: iaiAfter,
