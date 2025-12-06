@@ -366,7 +366,7 @@ const closeModal = () => {
                     <div>
                       <h2 className="text-3xl font-bold text-white mb-4">Key Outcomes</h2>
                       <div className="flex items-start gap-4">
-                         <CheckCircle2 className="text-emerald-500 flex-shrink-0 mt-1.5" size={24} />
+                         {/* <CheckCircle2 className="text-emerald-500 flex-shrink-0 mt-1.5" size={24} /> */}
                          <p className="text-xl text-slate-200 leading-relaxed font-light">{study.outcomes}</p>
                       </div>
                     </div>
