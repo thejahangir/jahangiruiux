@@ -53,7 +53,7 @@ export const caseStudies = [
     {
     id: "prometric",
     title: "Prometric Test Creation",
-    client: "Prometric Inc",
+    client: "Prometric Inc.",
     showComparison: true,
     overview: "The existing Flex-based modules relied on deprecated technologies and lacked long-term maintainability. As technical debt accumulated, enhancements became costly and inefficient. To ensure scalability, improve performance, and align with modern development standards, a complete migration to React was required.",
     role: "Lead UX Designer",
